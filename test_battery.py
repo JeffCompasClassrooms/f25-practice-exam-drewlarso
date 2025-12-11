@@ -32,6 +32,8 @@ def describe_battery():
     # put more test cases here.
     def it_calls_monitor_on_drain(charged_battery):
         mock_monitor = Mock()
+        # example of a stub
+        # mock_monitor.get_whatever.return_value = 123
         battery = charged_battery
         battery.external_monitor = mock_monitor
 
